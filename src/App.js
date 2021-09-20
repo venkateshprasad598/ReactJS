@@ -1,8 +1,12 @@
 import "./App.css";
-import Cocktail from "./Cocktail/Cocktail";
+// import Cocktail from "./Cocktail/Cocktail";
+import Redux from "./Redux/Redux";
 
 function App() {
-  return <Cocktail />;
+  return (
+    // <Cocktail />
+    <Redux />
+  );
 }
 
 export default App;
