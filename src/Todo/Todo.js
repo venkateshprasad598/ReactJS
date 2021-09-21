@@ -17,6 +17,7 @@ const Todo = () => {
       setList(person);
       setEdit(!isEdit);
       setName("");
+      setEditName([]);
     } else {
       const myList = { id: new Date().getTime(), title: name };
       setList([...list, myList]);
