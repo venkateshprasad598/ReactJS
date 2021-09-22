@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: thistle;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav__lists {
+  text-decoration: none;
+}

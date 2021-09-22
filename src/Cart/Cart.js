@@ -2,7 +2,7 @@ import React from "react";
 import data from "./CartData";
 import { useState } from "react";
 import { useAppProvider } from "./Context";
-// import Items from "./Items";
+import Items from "./Items";
 
 const Cart = () => {
   const [myData, setMyData] = useState(data);
@@ -29,6 +29,7 @@ const Cart = () => {
           </div>
         );
       })}
+      <Items />
     </div>
   );
 };

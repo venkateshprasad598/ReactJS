@@ -29,14 +29,20 @@
 // *********************CART ****************************
 
 // CART
+// import ReactDOM from "react-dom";
+// import React from "react";
+// import App from "./App";
+// import { AppProvider } from "./Cart/Context";
+
+// ReactDOM.render(
+//   <AppProvider>
+//     <App />
+//   </AppProvider>,
+//   document.getElementById("root")
+// );
+// *********************Sliders ****************************
 import ReactDOM from "react-dom";
 import React from "react";
 import App from "./App";
-import { AppProvider } from "./Cart/Context";
 
-ReactDOM.render(
-  <AppProvider>
-    <App />
-  </AppProvider>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
