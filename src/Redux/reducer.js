@@ -1,10 +1,9 @@
-import React from "react";
-
-const initialState = {
+import { combineReducers } from "redux";
+const intiaState = {
   counter: 0,
 };
 
-const reducer = (state = initialState, action) => {
+const reducer = (state = intiaState, action) => {
   switch (action.type) {
     case "INC":
       return {
@@ -21,4 +20,27 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-export default reducer;
+const myInitialState = {
+  basket: 0,
+};
+const second = (state = myInitialState, action) => {
+  switch (action.type) {
+    case "LNC":
+      return {
+        ...state,
+        basket: state.basket + 5,
+      };
+    case "PEC":
+      return {
+        ...state,
+        basket: state.basket - 5,
+      };
+    default:
+      return state;
+  }
+};
+
+export const rootReducer = combineReducers({
+  first: reducer,
+  second: second,
+});

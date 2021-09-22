@@ -9,6 +9,7 @@ const Slider = () => {
   // const [value, setValue] = useState(0);
   const increase = () => {
     let inc = value + 1;
+    n;
     if (inc > data.length - 1) {
       inc = 0;
     }
