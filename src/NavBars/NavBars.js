@@ -1,15 +1,20 @@
 import React from "react";
 import "./Nav.css";
-
+import { useState } from "react";
 const NavBars = () => {
+  const [isSlide, setIsSlide] = useState(false);
+
   return (
     <nav>
       <div className="nav">
         <h3>NavBar</h3>
-        <button>Click</button>
+        <button onClick={() => setIsSlide(!isSlide)}>
+          {isSlide ? "Close" : "Show Nav"}
+        </button>
       </div>
 
-      <div className="nav__slider">
+      <div className={isSlide ? "myNav myActive" : "myNav"}>
+        <button onClick={() => setIsSlide(!isSlide)}>CLose</button>
         <ul className="nav__unorder">
           <li>
             <a href="#" className="nav__lists">

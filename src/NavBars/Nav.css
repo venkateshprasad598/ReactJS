@@ -3,10 +3,26 @@
   align-items: center;
   justify-content: space-between;
   background-color: thistle;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 20px;
 }
 
+.myNav {
+  top: 0;
+  background-color: thistle;
+  position: fixed;
+  left: 100%;
+  width: 80%;
+
+  overflow: hidden;
+  transition: 300ms;
+}
+.myActive {
+  left: 40%;
+  transition: 300ms;
+}
+.nav__unorder {
+  list-style: none;
+}
 .nav__lists {
   text-decoration: none;
 }
