@@ -1,12 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import { AppProvider } from "./Cocktail/Context";
-import { createStore } from "redux";
-import reducer from "./Redux/reducer";
-import { Provider } from "react-redux";
-const store = createStore(reducer);
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import "./index.css";
+// import App from "./App";
+// import { AppProvider } from "./Cocktail/Context";
+// import { createStore } from "redux";
+// import reducer from "./Redux/reducer";
+// import { Provider } from "react-redux";
+// const store = createStore(reducer);
 // console.log(store.getState());
 
 // ReactDOM.render(
@@ -17,10 +17,26 @@ const store = createStore(reducer);
 //   </React.StrictMode>,
 //   document.getElementById("root")
 // );
+// *********************REDUX ****************************
+// ******************* SIMPLE ****************************
+// Normal One
+// ReactDOM.render(
+//   <Provider store={store}>
+//     <App />
+//   </Provider>,
+//   document.getElementById("root")
+// );
+// *********************CART ****************************
+
+// CART
+import ReactDOM from "react-dom";
+import React from "react";
+import App from "./App";
+import { AppProvider } from "./Cart/Context";
 
 ReactDOM.render(
-  <Provider store={store}>
+  <AppProvider>
     <App />
-  </Provider>,
+  </AppProvider>,
   document.getElementById("root")
 );
