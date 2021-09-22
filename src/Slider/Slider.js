@@ -1,10 +1,12 @@
 import React from "react";
 import data from "./SliderData";
 import { useState, useEffect } from "react";
+import "./Slider.css";
 
 const Slider = () => {
   const [list, setList] = useState(data);
   const [value, setValue] = useState(0);
+  // const [value, setValue] = useState(0);
   const increase = () => {
     let inc = value + 1;
     if (inc > data.length - 1) {
@@ -29,15 +31,29 @@ const Slider = () => {
     }, 2000);
     return () => clearTimeout(cleanup);
   }, [value]);
-  const { name, job, desc, img } = list[value];
+
   return (
-    <div>
-      <img src={img} height="100px" />
-      <h1>{name}</h1>
-      {job}
-      <p>{desc}</p>
-      <button onClick={decrease}>Previous</button>
-      <button onClick={increase}>Next</button>
+    <div className="slider">
+      {list.map((data, index) => {
+        const { name, job, desc, img } = data;
+        let position = "next";
+        if (index == value) {
+          position = "present";
+        }
+        if (index == value - 1) {
+          position = "pre";
+        }
+        return (
+          <div className={`slide ${position}`}>
+            <img src={img} height="100px" />
+            <h1>{name}</h1>
+            {job}
+            <p>{desc}</p>
+            <button onClick={decrease}>Previous</button>
+            <button onClick={increase}>Next</button>
+          </div>
+        );
+      })}
     </div>
   );
 };

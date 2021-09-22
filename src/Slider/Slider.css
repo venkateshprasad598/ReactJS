@@ -1,0 +1,25 @@
+.slider {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.slide {
+  position: absolute;
+  opacity: 0;
+  width: 300px;
+  margin-top: 50px;
+  background-color: thistle;
+  padding: 20px;
+  margin-right: 10px;
+  transition: 300ms;
+}
+.pre {
+  transform: translateX(-100%);
+}
+.next {
+  transform: translateX(100%);
+}
+.present {
+  opacity: 1;
+  transform: translateX(0);
+}
