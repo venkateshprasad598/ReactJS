@@ -40,9 +40,10 @@ const Slider = () => {
         if (index == value) {
           position = "present";
         }
-        if (index == value - 1) {
+        if (index == value - 1 || (value == 0 && index == list.length - 1)) {
           position = "pre";
         }
+
         return (
           <div className={`slide ${position}`}>
             <img src={img} height="100px" />

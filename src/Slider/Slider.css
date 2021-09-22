@@ -14,9 +14,13 @@
   transition: 300ms;
 }
 .pre {
+  /* opacity: 1; */
+
   transform: translateX(-100%);
 }
 .next {
+  /* opacity: 1; */
+
   transform: translateX(100%);
 }
 .present {

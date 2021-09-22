@@ -17,5 +17,11 @@ const data = [
     img: "https://i.ytimg.com/vi/2QDuYhS4pdU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAVm1o-aHdsPfRD4I1gi08OSpCuFQ",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos a adipisci eos natus tenetur unde voluptates, eum quaerat repellat, ducimus, tempora dolor esse. Vitae, deserunt cupiditate tempore corporis dicta iste!",
   },
+  {
+    name: "Venkarsad",
+    job: "Web Developer",
+    img: "https://i.ytimg.com/vi/2QDuYhS4pdU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAVm1o-aHdsPfRD4I1gi08OSpCuFQ",
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos a adipisci eos natus tenetur unde voluptates, eum quaerat repellat, ducimus, tempora dolor esse. Vitae, deserunt cupiditate tempore corporis dicta iste!",
+  },
 ];
 export default data;
