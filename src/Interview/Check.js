@@ -1,14 +1,16 @@
-import React from "react";
+import React, { Component } from "react";
 import { useState, useEffect } from "react";
-let renderCount = 0;
+// let renderCount = 0;
 const Check = () => {
-  useEffect(() => {
-    renderCount++;
-  });
+  console.log("Child");
+  console.log("-------");
+  // useEffect(() => {
+  //   renderCount++;
+  // });
 
   return (
     <div>
-      <h1>num : {renderCount}</h1>
+      <h1>Child</h1>
     </div>
   );
 };
