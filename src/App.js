@@ -5,12 +5,14 @@ import Redux from "./Redux/Redux";
 // import Slider from "./Slider/Slider";
 // import Cart from "./Cart/Cart";
 // import NavBars from "./NavBars/NavBars";
+import Interview from "./Interview/Interview";
 
 function App() {
   return (
     <div className="App">
-      <Redux />
+      <Interview />
     </div>
+    // <Redux />
     // <Slider />
     // <NavBars />
     // <Slider />
