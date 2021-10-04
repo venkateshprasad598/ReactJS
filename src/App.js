@@ -5,7 +5,7 @@ import Redux from "./Redux/Redux";
 // import Slider from "./Slider/Slider";
 // import Cart from "./Cart/Cart";
 // import NavBars from "./NavBars/NavBars";
-import Interview from "./Interview/Interview";
+import Interview from "./Interview/Parent";
 
 function App() {
   return (
