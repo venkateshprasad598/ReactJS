@@ -44,7 +44,11 @@ class Parent extends Component {
       <div>
         <h1>count : {this.state.count}</h1>
         <button onClick={this.IncreaseCount}>Increase</button>
-        <Child />
+        <Child
+          name="Venkatesh"
+          age={23}
+          title={[{ job: "Software Developer" }]}
+        />
       </div>
     );
   }
